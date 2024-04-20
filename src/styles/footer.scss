@@ -1,0 +1,23 @@
+.footer {
+  width: calc(100% - 40px);
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(40deg,rgba(255,169,94,0.51) 0%,
+  rgba(255, 159, 74, 0.81) 80%) ;
+  ;
+  padding: 30px 20px;
+  text-align: center;
+  color: #495867;
+  &__made {
+    font-weight: bold;
+  }
+}
+
+.footer--absolute {
+  position: absolute;
+}
+
+.footer--fixed {
+  position: fixed;
+}

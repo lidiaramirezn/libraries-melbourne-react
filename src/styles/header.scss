@@ -1,0 +1,27 @@
+.header {
+  background: rgba(255, 159, 74, 0.81) 80%;
+  color: #495867;
+  font-family: "Fjalla One", sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 80px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  p {
+    margin-left: 10px;
+  }
+}
+

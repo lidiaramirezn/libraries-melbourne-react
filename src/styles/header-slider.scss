@@ -1,0 +1,91 @@
+.header-slider {
+  position: relative;
+}
+
+.title { 
+  position: absolute;
+  z-index: 10;
+  color: #fff;
+  font-family: "Fjalla One", sans-serif;
+  background-color: rgba($color: #464646, $alpha: 0.6);
+  padding: 20px 40px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &__main {
+    font-family: "Lobster", sans-serif;
+    font-size: 6.2rem;
+    line-height: 6.2rem;
+  }
+
+  &__second {
+    font-size: 3.0rem;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+  }
+}
+
+.swiper {
+  width: 100%;
+  min-height: 400px;
+  
+  &-slide {
+    background-position: center;
+    background-size: cover;
+    width: fit-content;
+  }
+
+  & img {
+    height: 100%;
+  }
+}
+
+.wave {
+  & > svg {
+
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    transform: rotate(180deg);
+    overflow: hidden;
+  }
+}
+
+picture {
+  position: relative;
+}
+
+@media (min-width: 576px) { 
+  .swiper {
+    height: calc(100vh - 30px);
+  }
+
+  .wave {
+    & > svg  {
+      height: 100px;
+    }
+  }
+}
+
+@media (min-width: 1200px) { 
+  .swiper {
+    height: calc(100vh - 30px);
+    
+  }
+
+  .wave {
+    & > svg  {
+      height: 120px;
+    }
+  }
+}
+
+
+
+

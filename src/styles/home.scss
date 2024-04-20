@@ -1,0 +1,83 @@
+.subtitle {
+  color: #4F4F4F;
+  font-family: "Lobster", sans-serif;
+  font-size: 3.2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.list-cards,
+.list-books {
+  margin-top: 20px;
+}
+
+.list-books {
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+}
+
+.section {
+  margin-top: 40px;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  padding: 30px 20px;
+  height: 150px;
+  max-width: 800px;
+  margin: 0 auto;
+
+  &__title {
+    width: 30%;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 1.3rem;
+
+    & > span:first-child {
+      font-family: "Lobster", sans-serif;
+      font-size: 1.7rem;
+    }
+  }
+
+  &__text {
+    width: 70%;
+    font-size: 16px;
+
+    & > p {
+      margin-bottom: 10px;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.home__container {
+  padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    padding: 50px 20px;
+    &__text {
+      font-size: 18px;
+    }
+    &__title {
+      font-size: 2.6rem;
+      & > span:first-child {
+        font-size: 3.2rem;
+      }
+    }
+  }
+}

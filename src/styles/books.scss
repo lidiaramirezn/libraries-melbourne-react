@@ -1,0 +1,29 @@
+.books {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 40px;
+  column-gap: 30px;
+}
+
+.book {
+  width: 130px;
+  
+  &__cover {
+    width: 160px;
+    height: 190px;
+    background-color: aquamarine;
+  }
+}
+
+@media (min-width: 576px) {
+  .books {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1440px) {
+  .books {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

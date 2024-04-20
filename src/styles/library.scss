@@ -1,0 +1,49 @@
+.library {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  & > img {
+    max-width: 500px;  
+  }
+
+  &__title {
+    font-size: 2.125rem;
+    margin-bottom: 20px;
+  }
+
+  &__address {
+    display: flex;
+    margin-bottom: 20px;
+
+    a {
+      margin-left: 10px;
+    }
+  }
+
+  &__info {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    &-item {
+      &:first-child {
+        font-weight: bold;
+        width: 20%;
+      }
+      &:last-child {
+        width: 80%;
+      }
+    }
+  }
+
+  &__time {
+    display: flex;
+    margin-bottom: 10px;
+    & > p {
+      &:first-child {
+        width: 100px;
+      }
+    }
+  }
+}
