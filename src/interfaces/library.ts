@@ -1,12 +1,12 @@
-export type Library = {
+export type ILibrary = {
   name: string;
   id: string;
-  address: string;
-  schedule: Schedule[];
-  linkAddress: string;
+  address?: string;
+  schedule?: ISchedule[];
+  linkAddress?: string;
 }
 
-export type Schedule = {
+export type ISchedule = {
   day: string;
   start_time: string;
   end_time: string

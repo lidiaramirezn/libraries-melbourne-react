@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getRecommendedBooks } from '@services/getBook';
+import { getRecommendedBooks } from '@/services/getBook';
 
 export function useRecommended() {
   const [recommendedBooks, updateBooks] = useState([]);

@@ -1,6 +1,6 @@
 import { useForm, SubmitHandler } from "react-hook-form"
-import '@styles/search.scss';
-import { Header, Footer } from '@/components';
+import '@/styles/search.scss';
+import { Header } from '@/components';
 import { useEffect, useState } from "react";
 import { useBooks } from "../store/books";
 

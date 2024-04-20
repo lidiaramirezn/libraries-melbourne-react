@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useLibrariesStore } from '@/store/libraries';
-import { Library, Schedule } from '@types/library';
-import '@styles/library.scss';
+import { ILibrary, ISchedule } from '@/interfaces/library';
+import '@/styles/library.scss';
 import { convertTime } from '@/utils/convertTime';
 import { Header, Footer } from '@/components';
 
@@ -11,10 +11,10 @@ function Library() {
 
   const { id } = useParams();
   const libraries = useLibrariesStore((state) => state.results);
-  const [library, setLibrary] = useState<Library>({})
+  const [library, setLibrary] = useState<ILibrary>({id: '', name: ''})
 
   useEffect(() => {
-    let dataFilter: Library = libraries.filter(library => library.id === id);
+    let dataFilter = libraries.filter(library => library.id === id);
     setLibrary(dataFilter?.[0]);
   }, [])
   
@@ -41,7 +41,7 @@ function Library() {
               <div className="library__info-item">
                 <ul>
                   {
-                    library.schedule?.map((time: Schedule) => (
+                    library.schedule?.map((time: ISchedule) => (
                       <li className="library__time">
                         <p>{`${time.day}: `}</p>
                         <p> {time?.start_time ? `${convertTime(time.start_time)} - ${convertTime(time.end_time)}`: 'Cerrado'}</p>                  

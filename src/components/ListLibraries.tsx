@@ -1,9 +1,9 @@
-import '@styles/list-libraries.scss';
-import { Library } from "@types/library";
+import '@/styles/list-libraries.scss';
+import { ILibrary } from '@/interfaces/library';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-export function ListLibraries({allLibraries}) {
+export function ListLibraries({allLibraries = []}) {
   const [libraries, updateLibraries] = useState([])
   const navigate = useNavigate();
   
@@ -23,7 +23,7 @@ export function ListLibraries({allLibraries}) {
     <section className='list-libraries'>
       <div className='cards'>
         {
-          libraries?.map((library: Library) => 
+          libraries?.map((library: ILibrary) => 
           (
             <div 
               key={library.id}

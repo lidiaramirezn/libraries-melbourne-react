@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
-import '@styles/home.scss';
+import '@/styles/home.scss';
 import { Footer, HeaderSlider, ListBooks, ListLibraries } from '@/components';
 import { useLibrariesStore } from '@/store/libraries.ts';
-import { useRecommended } from '@/hooks/useRecommendBook.js';
+import { useRecommended } from '@/hooks/useRecommendBook.ts';
 import { useNavigate } from 'react-router-dom';
 
 function Home() {
   const onSetLibraries = useLibrariesStore((state) => state.onSetLibraries);
-  const allLibraries = useLibrariesStore((state) => state.results);
+  const allLibraries: any = useLibrariesStore((state) => state.results);
   const { recommendedBooks } = useRecommended();
   const navigate = useNavigate();
   

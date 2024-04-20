@@ -1,6 +1,6 @@
-import '@styles/books.scss';
+import '@/styles/books.scss';
 
-export function ListBooks({books}) {
+export function ListBooks({books = []}) {
   return(
   <div className='books'>
     {
