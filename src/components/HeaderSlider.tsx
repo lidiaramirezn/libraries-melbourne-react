@@ -4,26 +4,27 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import '@/styles/header-slider.scss';
 
+const url = 'https://raw.githubusercontent.com/lidiaramirezn/libraries-melbourne-react/master';
 const data = [
   {
     id: '01',
-    imgMobile: './src/assets/portada-mobile-01.jpg',
-    imgDesktop: './src/assets/portada-01.jpg'
+    imgMobile: `${url}/src/assets/portada-mobile-01.jpg`,
+    imgDesktop: `${url}/src/assets/portada-01.jpg`
   },
   {
     id: '02',
-    imgMobile: './src/assets/portada-mobile-02.jpg',
-    imgDesktop: './src/assets/portada-02.jpg'
+    imgMobile: `${url}/src/assets/portada-mobile-02.jpg`,
+    imgDesktop: `${url}/src/assets/portada-02.jpg`
   },
   {
     id: '03',
-    imgMobile: './src/assets/portada-mobile-03.jpg',
-    imgDesktop: './src/assets/portada-03.jpg'
+    imgMobile: `${url}/src/assets/portada-mobile-03.jpg`,
+    imgDesktop: `${url}/src/assets/portada-03.jpg`
   },
   {
     id: '04',
-    imgMobile: './src/assets/portada-mobile-04.jpg',
-    imgDesktop: './src/assets/portada-04.jpg'
+    imgMobile: `${url}/src/assets/portada-mobile-04.jpg`,
+    imgDesktop: `${url}/src/assets/portada-04.jpg`
   }
 ]
 
