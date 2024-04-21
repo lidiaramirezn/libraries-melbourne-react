@@ -2,6 +2,7 @@ import '@/styles/header.scss';
 import { Link } from 'react-router-dom';
 
 export function Header() {
+  const url = 'https://raw.githubusercontent.com/lidiaramirezn/libraries-melbourne-react/master';
   return(
   <header className='header'>
 
@@ -17,7 +18,7 @@ export function Header() {
       </Link>
       <div>
         <a href="" target='_blank'>
-          <img width={30} height={30} src="./src/assets/github.png" alt="" />
+          <img width={30} height={30} src={`${url}/src/assets/github.png`} alt="" />
         </a>
       </div>
     </div>

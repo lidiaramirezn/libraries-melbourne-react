@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 export function ListLibraries({allLibraries = []}) {
+
+  const url = 'https://raw.githubusercontent.com/lidiaramirezn/libraries-melbourne-react/master';
   const [libraries, updateLibraries] = useState([])
   const navigate = useNavigate();
   
@@ -30,7 +32,7 @@ export function ListLibraries({allLibraries = []}) {
               className='card' 
               onClick={() => handleLibraryClick(library.id)}>
                 <div className='card__overlay'></div>
-              <img className='card__image' src={`./src/assets/library-${library.id}.jpg`}></img>
+              <img className='card__image' src={`${url}/src/assets/library-${library.id}.jpg`}></img>
               <div className='card__title'>
                 { library.name }
               </div>

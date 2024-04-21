@@ -9,6 +9,8 @@ type Inputs = {
 }
 
 export function SearchBook() {
+
+  const url = 'https://raw.githubusercontent.com/lidiaramirezn/libraries-melbourne-react/master';
   const onSetAllBooks = useBooks((state) => state.onSetAllBooks);
   const searchBooks = useBooks((state) => state.searchBooks);
   const resetBooks = useBooks((state) => state.reset);
@@ -77,7 +79,7 @@ export function SearchBook() {
                 books.map((book) => (
                   <article className="result">    
                     <picture>
-                      <img src={`./src/assets/books/${book.id}.jpg`} alt="" />
+                      <img src={`${url}/src/assets/books/${book.id}.jpg`} alt="" />
                     </picture>
                     <div>
                       <h3 className="result__name">{book.name}</h3>

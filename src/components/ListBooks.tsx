@@ -1,6 +1,8 @@
 import '@/styles/books.scss';
 
 export function ListBooks({books = []}) {
+  const url = 'https://raw.githubusercontent.com/lidiaramirezn/libraries-melbourne-react/master';
+  
   return(
   <div className='books'>
     {
@@ -11,7 +13,7 @@ export function ListBooks({books = []}) {
             className='book'
             key={book.id}>
               {/* <div className='book__cover'></div> */}
-              <img src={`./src/assets/recommended/${book.id}.jpg`} />
+              <img src={`${url}/src/assets/recommended/${book.id}.jpg`} />
               {/* <p>{ book.name }</p>  */}             
           </div>
         )

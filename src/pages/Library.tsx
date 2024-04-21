@@ -9,6 +9,7 @@ import { Header, Footer } from '@/components';
 
 function Library() {
 
+  const url = 'https://raw.githubusercontent.com/lidiaramirezn/libraries-melbourne-react/master';
   const { id } = useParams();
   const libraries = useLibrariesStore((state) => state.results);
   const [library, setLibrary] = useState<ILibrary>({id: '', name: ''})
@@ -33,7 +34,7 @@ function Library() {
                 {library.address}
               </a>
             </p>
-            <img src={`./../src/assets/library-${library.id}.jpg`} alt='' />
+            <img src={`${url}/src/assets/library-${library.id}.jpg`} alt='' />
             <div className="library__info">
               <div className="library__info-item">
                 Opening hours:
