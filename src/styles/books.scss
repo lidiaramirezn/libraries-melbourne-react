@@ -1,9 +1,10 @@
 .books {
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 40px;
-  column-gap: 30px;
+  justify-content: center;
+  grid-template-columns: auto auto;
+  row-gap: 30px;
+  column-gap: 40px;
 }
 
 .book {
@@ -18,12 +19,12 @@
 
 @media (min-width: 576px) {
   .books {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: auto auto auto;
   }
 }
 
 @media (min-width: 1440px) {
   .books {
-    grid-template-columns: repeat(6, 1fr);
+    row-gap: 40px;
   }
 }

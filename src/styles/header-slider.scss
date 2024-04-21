@@ -16,16 +16,16 @@
 
   &__main {
     font-family: "Lobster", sans-serif;
-    font-size: 6.2rem;
-    line-height: 6.2rem;
+    font-size: 4rem;
+    line-height: 5rem;
   }
 
   &__second {
-    font-size: 3.0rem;
+    font-size: 2.5rem;
   }
 
   &__text {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -62,6 +62,21 @@ picture {
 }
 
 @media (min-width: 576px) { 
+  .title {
+    &__main {
+      font-size: 6.2rem;
+      line-height: 6.2rem;
+    }
+
+    &__second {
+      font-size: 3.0rem;
+    }
+  
+    &__text {
+      font-size: 1.6rem;
+    }
+  }
+
   .swiper {
     height: calc(100vh - 30px);
   }

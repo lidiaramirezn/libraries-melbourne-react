@@ -111,10 +111,11 @@ export function SearchBook() {
           <section className='search__info'>
             <p> 
               The information is just a mockup. 
-              Use keywords: <strong>Javascript, PHP</strong>
-              <br />
+              Use keywords: <strong>Javascript, PHP, HTML, MySQL, TypeScript, React, Angular.</strong>
+              <br /><br />
               The details that will be shown in the search are: 
             </p>
+
             <ul>
               <li>Name of the book (short)</li>
               <li>Author</li>
