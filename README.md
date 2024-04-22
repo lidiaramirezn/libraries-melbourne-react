@@ -5,6 +5,6 @@ This website is inspired by the public libraries of Melbourne, Australia. In thi
 🛠️ Stack
 
 
-  React - ✅Zustand ✅React router ✅React hook form    
-  Typescript - ✅Fetch ✅Types  
-  Vite
+  ✅ React: Use `hooks` and libraries like `zustand` `react-router` ✅`React-hook-form`   
+  ✅Typescript: Use `fetch` and `types`
+  ✅ Vite
