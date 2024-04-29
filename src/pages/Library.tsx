@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useLibrariesStore } from '@/store/libraries';
-import { ILibrary, ISchedule } from '@/interfaces/library';
+import { ISchedule } from '@/interfaces/library';
 import '@/styles/library.scss';
 import { convertTime } from '@/utils/convertTime';
 import { Header, Footer } from '@/components';
@@ -11,12 +11,11 @@ function Library() {
 
   const url = 'https://raw.githubusercontent.com/lidiaramirezn/libraries-melbourne-react/master';
   const { id } = useParams();
-  const libraries = useLibrariesStore((state) => state.results);
-  const [library, setLibrary] = useState<ILibrary>({id: '', name: ''})
+  const getLibrary = useLibrariesStore((state) => state.getLibrary);
+  const library = useLibrariesStore((state) => state.library);
 
   useEffect(() => {
-    let dataFilter = libraries.filter(library => library.id === id);
-    setLibrary(dataFilter?.[0]);
+    getLibrary(id)
   }, [])
   
   return(
@@ -24,7 +23,7 @@ function Library() {
       <Header/>
       <main>
         {
-          Object.keys(library)?.length ? (
+          Object.keys(library)?.length > 0 ? (
           <section className='library'>
             <h1 className='library__title'>{ library.name }</h1>
             <p className="library__address">

@@ -1,4 +1,3 @@
-// const URL = 'https://apimocha.com/lramirezn';
 const URL_API = 'https://demo4977042.mockable.io';
 
 export const getLibraries = async () => {

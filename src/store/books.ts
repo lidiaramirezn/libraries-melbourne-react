@@ -44,7 +44,6 @@ export const useBooks = create<State & Actions>((set, get) => (
       set({ books: dataFilter });
     },
     reset: () => {
-      console.log('RESET')
       set({ books: [] });
     },
   }

@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 
 function Home() {
   const onSetLibraries = useLibrariesStore((state) => state.onSetLibraries);
-  const allLibraries: any = useLibrariesStore((state) => state.results);
+  const allLibraries: any = useLibrariesStore((state) => state.libraries);
   const { recommendedBooks } = useRecommended();
   const navigate = useNavigate();
   
